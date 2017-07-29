@@ -3,6 +3,7 @@ os: linux
 dist: trusty
 python:
   - 3.5
+sudo: required
 script:
   - cat /etc/lsb-release
   - git clone https://github.com/google/googletest.git
@@ -11,3 +12,8 @@ script:
   - cd build
   - cmake ..
   - make -j8
+  - sudo make install
+  - cd
+  - cmake .
+  - make
+  - ./sample

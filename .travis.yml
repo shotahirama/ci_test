@@ -14,9 +14,9 @@ script:
   - make -j8
   - sudo make install
   - cd ..
-  - mkdir build
-  - cd build
+  - mkdir samplebuild
+  - cd samplebuild
   - cmake ..
   - make
-  - la
+  - ls
   - ./sample

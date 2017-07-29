@@ -1,6 +1,6 @@
 language: python
 os: linux
-dist: trusty
+dist: Xenial Xerus
 python:
   - 3.5
 script:

@@ -17,6 +17,7 @@ script:
   - mkdir samplebuild
   - cd samplebuild
   - cmake ..
+  - ls
   - make
   - ls
   - ./sample
